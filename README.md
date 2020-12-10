@@ -1,3 +1,5 @@
+**Note: `svelte` is a dependency, does not include postinstall script**
+
 # SSWR (Svelte Stale While Revalidate)
 
 > Svelte stale while revalidate (SWR) data fetching strategy

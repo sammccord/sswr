@@ -1,5 +1,5 @@
 {
-  "name": "sswr",
+  "name": "sswr-patch",
   "version": "1.0.0",
   "description": "Svelte stale while revalidate (SWR) data fetching strategy",
   "repository": "github.com/ConsoleTVs/sswr",
@@ -15,18 +15,14 @@
   "scripts": {
     "dev": "tsup src/index.ts --watch --format esm,cjs,iife --legacy-output",
     "build": "tsup src/index.ts --dts --format esm,cjs,iife --legacy-output --minify",
-    "postinstall": "yarn install-peers",
     "prepack": "yarn build"
   },
-  "peerDependencies": {
-    "svelte": "^3.29.4"
-  },
   "devDependencies": {
-    "install-peers-cli": "^2.2.0",
     "tsup": "^3.7.1",
     "typescript": "^4.0.5"
   },
   "dependencies": {
+    "svelte": "^3.29.4",
     "swrev": "^1.4.1"
   }
 }
